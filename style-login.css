@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #929E4C;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 92%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.conteudo-esquerda {
+    background-image: url(imagens/cachorro.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    -webkit-border-radius: 6px 0px 0px 6px;
+    -moz-border-radius: 6px 0px 0px 6px;
+    border-radius: 6px 0px 0px 6px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 1px 1px 1px 0px solid rgba(0, 0, 0, 0.1);
+}
+
+.conteudo-direita {
+    background-color:#FFF8E1;
+    padding: 20px;
+    -webkit-border-radius: 0px 6px 6px 0px;
+    -moz-border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 6px 6px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: 0px 1px 1px 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#Titulo-login {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    color: #333333;
+}
+
+form{
+    margin-left: 50px;
+}
+
+input {
+	height: 40px;
+	width: 80%;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #E0E0E0;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 12px;
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+}
+
+input.email {
+	background-image: url(imagens/icone-usuario.png);
+}
+
+input.senha {
+	background-image: url(imagens/icone-cadeado.png);
+}
+
+input.submit {
+	color: #fff;
+	background-color: #9ACD32;
+	margin-top: 25px;
+	padding:  5px 20px;
+	height: 45px;
+	width: 90%;
+    cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input.submit:hover {
+    background-color: #7DBB2D;
+  transform: scale(1.05);
+}
+
+#cadastrar {
+    text-align: center;
+    font-style: italic;
+}
+
+.cadastrar-a{
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.cadastrar-a:hover{
+    background-color: #333;
+    color: #fff;
+    border-color: #fff;
+}
